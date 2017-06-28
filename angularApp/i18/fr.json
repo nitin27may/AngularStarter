@@ -48,6 +48,9 @@
     "ENGLISH":"English",
     "FRENCH":"French"
   },
+    "PAGE":{
+    "LOGIN":"Fr Login"
+  },
   "VALIDATOR": {
     "REQUIRED": "This field is required."
   },

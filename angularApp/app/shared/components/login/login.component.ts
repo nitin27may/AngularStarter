@@ -3,6 +3,7 @@
     NgModule,
     OnInit
 } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {
     FormGroup,
     FormBuilder,
@@ -46,6 +47,7 @@ export class LoginComponent implements OnInit {
     loginForm: any;
     constructor(private translate: TranslateService,
         private formBuilder: FormBuilder,
+        private titleService: Title,
         private apiService: APIService,
         private router: Router,
         private loaderService: LoaderService,
@@ -87,8 +89,15 @@ export class LoginComponent implements OnInit {
     selectLanguage(lang: any) {
         this.storageService.save(StorageType.local, "language", lang);
         this.translate.use(lang);
+        this.setTitle('PAGE.LOGIN');
     }
+   public setTitle(newTitle: string) {
+        this.translate.get(newTitle).subscribe((res: string) => {
+           this.titleService.setTitle(res);
+        });
+  }
     ngOnInit() {
+        this.setTitle('PAGE.LOGIN');
         this.loginForm = this.formBuilder.group({
             'Email': [this.storageService.get(StorageType.local, "UserEmail") ? this.storageService.get(StorageType.local, "UserEmail") : null, [Validators.required, Validators.minLength(3)]],
             'Password': ['', [Validators.required, Validators.minLength(5)]],
