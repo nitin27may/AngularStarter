@@ -44,7 +44,9 @@
     "AREUSUREDELETE": "Are you sure? You want to delete this record?",
     "YES": "Yes",
     "NO": "No",
-    "CONFIRMATION": "Confirmation"
+    "CONFIRMATION": "Confirmation",
+    "ENGLISH":"English",
+    "FRENCH":"French"
   },
   "VALIDATOR": {
     "REQUIRED": "This field is required."
