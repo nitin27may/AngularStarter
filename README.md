@@ -39,7 +39,11 @@ npm install
 ```
 npm start
 ```
-
+### Default Credential
+```
+UserName: admin@sampleapp.in
+Password: admin
+```
 
 * [Angular](https://angular.io/) - The web framework used
 
