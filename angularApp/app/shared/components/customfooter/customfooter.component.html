@@ -1,6 +1,16 @@
-
 <!-- begin #footer -->
+
 <div id="footer" class="footer">
-    &copy; 2017 Angular 2 Web API - Nitin Singh All Rights Reserved
+    <!--<form [formGroup]="footerForm">-->
+    <div> &copy; 2017 Angular 2 Web API - Nitin Singh All Rights Reserved</div>
+         <div class="text-muted pull-right">
+           
+                    <select name="language" class="pull-right form-control"  (change)="selectedLanguage($event.target.value)">
+                                <option value="fr">{{ 'COMMON.FRENCH' | translate }}</option>
+                                <option value="en">{{ 'COMMON.ENGLISH' | translate }}</option>
+                        </select>
+        <div>
+  
 </div>
+  <!--</form>-->
 <!-- end #footer -->
