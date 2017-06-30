@@ -14,7 +14,7 @@ export class CustomFooterComponent implements OnInit {
     constructor(private translate: TranslateService,
         private formBuilder: FormBuilder,     
         private storageService: StorageService) {
-       
+         this.translate.use("fr");
     };
 
     selectedLanguage(lang: any) {
@@ -22,9 +22,10 @@ export class CustomFooterComponent implements OnInit {
         this.translate.use(lang);
     };
      ngOnInit() {
-        // this.footerForm = this.formBuilder.group({
-        //     'language': this.storageService.get(StorageType.local, "language") ? this.storageService.get(StorageType.local, "language") : null
-        // });
-       // this.translate.use(this.storageService.get(StorageType.local, "language") ? this.storageService.get(StorageType.local, "language") : 'en');
+        
+        this.footerForm = this.formBuilder.group({
+            'language': this.storageService.get(StorageType.local, "language") ? this.storageService.get(StorageType.local, "language") : null
+        });
+     
     };
 }

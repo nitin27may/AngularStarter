@@ -45,8 +45,8 @@
     "YES": "Yes",
     "NO": "No",
     "CONFIRMATION": "Confirmation",
-    "ENGLISH":"English",
-    "FRENCH":"French"
+    "ENGLISH":"Fr English",
+    "FRENCH":"Fr French"
   },
     "PAGE":{
     "LOGIN":"Fr Login"
