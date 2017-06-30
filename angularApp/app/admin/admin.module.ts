@@ -18,7 +18,6 @@ import { EventAddComponent } from './components/events/event-add.component';
 @NgModule({
     imports: [
         CommonModule,
-        //FormsModule,
         HttpModule,
         AdminRoutes,
         SharedModule
