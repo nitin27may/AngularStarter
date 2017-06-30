@@ -3,10 +3,10 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { ValidationService } from '../../services/validation.service';
 
 @Component({
-    selector: 'control-messages',
-    templateUrl: 'control-message.component.html'
+    selector: 'validation-messages',
+    templateUrl: 'validation-message.component.html'
 })
-export class ControlMessagesComponent {
+export class ValidationMessagesComponent {
     @Input() control: FormControl;
     constructor(private validationService: ValidationService) { }
 
