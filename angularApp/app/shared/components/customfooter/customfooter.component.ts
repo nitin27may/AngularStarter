@@ -14,7 +14,6 @@ export class CustomFooterComponent implements OnInit {
     constructor(private translate: TranslateService,
         private formBuilder: FormBuilder,     
         private storageService: StorageService) {
-         this.translate.use("fr");
     };
 
     selectedLanguage(lang: any) {

@@ -54,7 +54,10 @@
     "LOGIN":"Login"
   },
   "VALIDATOR": {
-    "REQUIRED": "This field is required."
+    "REQUIRED": "This field is required.",
+    "EMAIL":"Invalid email address.",
+    "INVALIDPW":"Invalid password. Password must be at least 6 characters long, and contain a number.",
+    "MINLENGTH":"Minumum required length is {{value}} ."
   },
   "LAZY": "I'm lazy loaded!"
 }
