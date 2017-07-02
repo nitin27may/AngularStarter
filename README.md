@@ -25,6 +25,9 @@ Command for check version of node and npm (if installed)
 node -v 
 npm -v
 ```
+### Note
+
+To show how to use rest servicrs in app, we have used services hosted on another server.
 
 ### Installing
 
